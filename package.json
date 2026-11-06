@@ -1,0 +1,16 @@
+{
+  "name": "test-service-1",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A tiny CLI that depends on test-service-2.",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "test-service-2": "git+https://github.com/prasannakumar414/test-service-2.git#master"
+  }
+}
